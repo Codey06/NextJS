@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Home() {
+const  Home=async()=> {
   const posts=await fetch('https://jsonplaceholder.typicode.com/posts')
   const postsData =await posts.json()
 
@@ -19,3 +19,4 @@ export default async function Home() {
  </>
   );
 }
+export default Home
